@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'items/new'
+
   root to: 'toppages#index'
 
   get 'login', to: 'sessions#new'
@@ -7,5 +9,7 @@ Rails.application.routes.draw do
 
   get 'signup', to: 'users#new'
   resources :users, only: [:show, :new, :create]
+  
+  resources :items, only: [:new]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
