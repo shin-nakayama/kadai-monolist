@@ -74,6 +74,20 @@ p.item-title {
   margin: 0 5px;
 }
 
+#want {
+  float: left;
+  margin: 0;
+  width: 155px;
+  height: 0px;
+}
+
+#have {
+  float: right;
+  margin: 0;
+  width: 155px;
+  height: 0px;
+}
+
 /* users */
 .user-profile .name {
   margin-bottom: 20px;
