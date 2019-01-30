@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'rankings/want'
+
   get 'ownerships/create'
 
   get 'ownerships/destroy'
@@ -16,5 +18,7 @@ Rails.application.routes.draw do
   
   resources :items, only: [:show, :new]
   resources :ownerships, only: [:create, :destroy]
+  
+  get 'rankings/want', to:  'rankings#want'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
